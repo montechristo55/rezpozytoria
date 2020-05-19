@@ -1,6 +1,6 @@
 body {
     width: 1000px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0 auto;
     font-family: sans-serif;
     color:white;
@@ -22,15 +22,16 @@ body {
 .header__logo{
     display:flex;
     justify-content: center;
-    color: teal;
+    color: #006564;
     font-size: 77px;
     text-shadow: 2px 2px;
+    font-weight: 300;
 }
 .header__nav{
     display:flex;
     justify-content: center;
     list-style-type: none;
-    color: teal;
+    color: #006564;
     border-radius: 5px;
     }
 .header__nav--menu {
@@ -38,16 +39,15 @@ body {
     justify-content:center;
     margin: 5px 0;
     padding: 5px;
-    color: teal;
+    color: #006564;
     font-size: 22px;
     min-height: 40px;
     line-height: 200%;
 }
 .header__nav--menu a {
     text-decoration: none;
-    color: teal;
+    color: #006564;
     margin:10px;
-    vertical-align: middle;
 }
 .header__nav--menu a:hover {
     color:rgb(40, 48, 72);
@@ -55,68 +55,71 @@ body {
 .header__nav--menu li {
     list-style-type: none;
     padding: 0 10px;
-    border-right: 1px dashed teal;
+    border-right: 1px dashed #006564;
     
 }
 .header__nav--menu li:first-child {
-    border-left: 1px dashed teal;
+    border-left: 1px dashed #006564;
 }
 .layout{
-    min-height: 200px;
+    min-height: 55px;
+    background-color: yellowgreen;
 }
-.main{
-    display:flex;
-    max-width: 40vw;
-    color: teal;
-    background-color: grey;
+.main {
+    max-width: 60vw;
     margin:none;
-    color: white;
+    background-color:lightblue;
 }
-.content__square{
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* min-width: 200px;
-    min-height: 200px; */
-    /* background-image: url('pielgrzym.jpg'); */
-   
+.content__square {
+    list-style: none;
+    display:table;
+    display:block;
+
 }
 .content__square--pilgrim{
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 0 5px 5px 0;
-    color: #ffffff;
+    background-image: url('klasztor-jasnogorski.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;
+    color: black;
+    flex-wrap: wrap;
     display:flex;
-    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 5px;
+    
 }
 .content__square--turist{
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 0 0 5px 0;
+    background-image: url('castle.JPG');
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;
 }
 .content__square--enjoy{
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 5px;
+    background-image: url('#');
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;
 }
 .content__square--transfer{
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 5px;
+    background-image: url('#');
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;
 }
 .content__square--plan{
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 5px;
+    background-image: url('#');
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;
 }
 .content__square--tile {
-    background-image: url('pielgrzym.jpg');
-    min-width: 250px;
-    min-height: 250px;
-    margin: 5px;
+    background-image: url('#');
+    min-width: 350px;
+    min-height: 300px;
+    margin-bottom: 25px;  
+}
+.icon{
+    color:red;
 }
