@@ -1,13 +1,122 @@
 body {
+    width: 1000px;
+    box-sizing: border-box;
     margin: 0 auto;
     font-family: sans-serif;
+    color:white;
 }
-
+.top__box{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    line-height: 100%;
+}
+.top__box--languages a {
+   text-decoration: none; 
+}
+.top__box--kontakt {
+    color:teal;
+    display: flex;;
+    flex-wrap: wrap;
+}
 .header__logo{
     display:flex;
     justify-content: center;
     color: teal;
-    font-size: 52px;
+    font-size: 77px;
     text-shadow: 2px 2px;
-    width: 1;
+}
+.header__nav{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    color: teal;
+    border-radius: 5px;
+    }
+.header__nav--menu {
+    display:flex;
+    justify-content:center;
+    margin: 5px 0;
+    padding: 5px;
+    color: teal;
+    font-size: 22px;
+    min-height: 40px;
+    line-height: 200%;
+}
+.header__nav--menu a {
+    text-decoration: none;
+    color: teal;
+    margin:10px;
+    vertical-align: middle;
+}
+.header__nav--menu a:hover {
+    color:rgb(40, 48, 72);
+}
+.header__nav--menu li {
+    list-style-type: none;
+    padding: 0 10px;
+    border-right: 1px dashed teal;
+    
+}
+.header__nav--menu li:first-child {
+    border-left: 1px dashed teal;
+}
+.layout{
+    min-height: 200px;
+}
+.main{
+    display:flex;
+    max-width: 40vw;
+    color: teal;
+    background-color: grey;
+    margin:none;
+    color: white;
+}
+.content__square{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* min-width: 200px;
+    min-height: 200px; */
+    /* background-image: url('pielgrzym.jpg'); */
+   
+}
+.content__square--pilgrim{
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 0 5px 5px 0;
+    color: #ffffff;
+    display:flex;
+    justify-content: flex-end;
+}
+.content__square--turist{
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 0 0 5px 0;
+}
+.content__square--enjoy{
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
+}
+.content__square--transfer{
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
+}
+.content__square--plan{
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
+}
+.content__square--tile {
+    background-image: url('pielgrzym.jpg');
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
 }
