@@ -1,3 +1,13 @@
 body {
-    
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.header__logo{
+    display:flex;
+    justify-content: center;
+    color: teal;
+    font-size: 52px;
+    text-shadow: 2px 2px;
+    width: 1;
 }
