@@ -63,8 +63,10 @@ body {
     border-left: 1px dashed #006564;
 }
 .layout{
-    min-height: 55px;
-    background-color: yellowgreen;
+    
+    min-height: 10px;
+    background-color: #006564;
+    
 }
 .main {
     max-width: 550px;
