@@ -67,47 +67,53 @@ body {
     background-color: yellowgreen;
 }
 .main {
-    max-width: 500px;
+    max-width: 550px;
     margin:none;
     background-color:lightblue;
     position: relative;
 }
 .content__square {
     list-style: none;
-    /* display:table; */
-    display:block;
-    /* position:reletive; */
+    /* display:flex; */
+    /* flex-direction:column; */
+    position:reletive;
 }
 .content__square--pilgrim{
     background-image: url('klasztor-jasnogorski.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     width:100%;
     height: 300px;
-    margin:none;
-    margin-bottom: 25px;
+    margin-top:20px;;
     color: #fff;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display:flex;
     align-items: flex-end;
-    position: absolute;
-    left:0;
+    /* position: absolute;
+    left:0; */
+    border-radius: 5px;
 }
 .content__square--turist{
-    background-image: url('path.JPG');
+    background-image: url('Szwajcaria-szlaki-długodystansowe-10-660x330.jpg');
     background-repeat: no-repeat;
-    background-color: grey;
-    background-position: center center;
-    max-width: 550px;
+    background-position: center;
+    width:100%;
     height: 300px;
-    margin-bottom: 25px;
-    background-color: grey;
+    margin:20px 0;
+    color: #fff;
+    /* flex-wrap: wrap; */
+    display:flex;
+    align-items: flex-end;
+    /* position: absolute;
+    left:0; */
+    border-radius: 5px;
 }
 .content__square--enjoy{
     background-image: url('#');
     background-repeat: no-repeat;
     width:100%;
     height: 300px;
-    margin:none;
+    /* margin:none; */
     margin-bottom: 25px;
     color: #fff;
     flex-wrap: wrap;
@@ -117,11 +123,20 @@ body {
     left:0;
 }
 .content__square--transfer{
-    background-image: url('#');
-    min-width: 350px;
-    min-height: 300px;
+    background-image: url('krakow-airport.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width:100%;
+    height: 300px;
+    margin:20px 0;
     margin-bottom: 25px;
-    background-color: grey;
+    color: #fff;
+    /* flex-wrap: wrap; */
+    display:flex;
+    align-items: flex-end;
+    /* position: absolute;
+    left:0; */
+    border-radius: 5px;
 }
 .content__square--plan{
     background-image: url('#');
