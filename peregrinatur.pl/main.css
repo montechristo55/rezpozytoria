@@ -79,10 +79,10 @@ body {
     position:reletive;
 }
 .content__square--pilgrim{
-    background-image: url('klasztor-jasnogorski.jpg');
+    background-image: url('grafika/klasztor-jasnogorski.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    width:100%;
+    /* width:100%; */
     height: 300px;
     margin-top:20px;;
     color: #fff;
@@ -94,10 +94,10 @@ body {
     border-radius: 5px;
 }
 .content__square--turist{
-    background-image: url('Szwajcaria-szlaki-długodystansowe-10-660x330.jpg');
+    background-image: url('grafika/mountains-660x330.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    width:100%;
+    /* width:100%; */
     height: 300px;
     margin:20px 0;
     color: #fff;
@@ -123,13 +123,12 @@ body {
     left:0;
 }
 .content__square--transfer{
-    background-image: url('krakow-airport.jpg');
+    background-image: url('grafika/krakow-airport.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
-    width:100%;
+    /* width:100%; */
     height: 300px;
     margin:20px 0;
-    margin-bottom: 25px;
     color: #fff;
     /* flex-wrap: wrap; */
     display:flex;
@@ -139,11 +138,17 @@ body {
     border-radius: 5px;
 }
 .content__square--plan{
-    background-image: url('#');
-    min-width: 350px;
-    min-height: 300px;
+    background-image: url('grafika/the\ world.jpg');
+    /* width:100%; */
+    height: 300px;
     margin-bottom: 25px;
-    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #006564;
+    font-weight: bold;
 }
 .content__square--tile {
     background-image: url('#');
