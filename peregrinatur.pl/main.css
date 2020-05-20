@@ -80,34 +80,31 @@ body {
     /* flex-direction:column; */
     position:reletive;
 }
-.content__square--pilgrim{
+.content__square--pilgrim {
     background-image: url('grafika/klasztor-jasnogorski.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    /* width:100%; */
+    width:100%;
     height: 300px;
     margin-top:20px;;
     color: #fff;
-    /* flex-wrap: wrap; */
     display:flex;
     align-items: flex-end;
-    /* position: absolute;
-    left:0; */
     border-radius: 5px;
 }
-.content__square--turist{
+.fotolink{
+    text-decoration: none;
+    color: #fff;
+}
+.content__square--turist {
     background-image: url('grafika/mountains-660x330.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    /* width:100%; */
     height: 300px;
     margin:20px 0;
     color: #fff;
-    /* flex-wrap: wrap; */
     display:flex;
     align-items: flex-end;
-    /* position: absolute;
-    left:0; */
     border-radius: 5px;
 }
 .content__square--enjoy{
@@ -128,20 +125,15 @@ body {
     background-image: url('grafika/krakow-airport.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
-    /* width:100%; */
     height: 300px;
     margin:20px 0;
     color: #fff;
-    /* flex-wrap: wrap; */
     display:flex;
     align-items: flex-end;
-    /* position: absolute;
-    left:0; */
     border-radius: 5px;
 }
 .content__square--plan{
     background-image: url('grafika/the\ world.jpg');
-    /* width:100%; */
     height: 300px;
     margin-bottom: 25px;
     background-repeat: no-repeat;
@@ -159,6 +151,7 @@ body {
     margin-bottom: 25px;
     background-color: grey;  
 }
-.icon{
-    color:red;
+.footer{
+    background-color:red;
+    min-height: 300px;
 }
