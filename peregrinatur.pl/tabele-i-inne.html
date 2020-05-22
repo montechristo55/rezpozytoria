@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabele-i-inne.css">
+    <style>
+        div {
+            background: salmon;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="https://www.pch24.pl/">odnośnik 1</a>
+        <a href="https://www.pch24.pl/">odnośnik 2</a>
+        <a id="special" href="https://www.pch24.pl/">special odnośnik</a>
+        <a href="https://www.pch24.pl/">odnośnik 4</a>
+        <a href="https://www.pch24.pl/">odnośnik 5</a>
+    </nav>
+    <main>
+        <!-- W CSS BĘDZIEMY FORMATOWAĆ  
+            main div {
+            background:color;   ITD
+            } 
+         format obejmuje wtedy każdy div w każdym mainie!!!-->
+        <div>
+            <!-- div#a${BOX $}*5 -->
+            <div id="a1">BOX 1</div>
+            <div id="a2">BOX 2</div>
+            <div id="a3">BOX 3</div>
+            <div id="a4">BOX 4</div>
+            <div id="a5">BOX 5</div>
+        </div>
+
+        <div style="background: lightseagreen; width:500px; margin:10px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium repellat, facilis distinctio
+                necessitatibus aperiam quia, quam minus obcaecati tenetur mollitia laborum quo ex suscipit laboriosam
+                blanditiis. Minus, nobis velit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium repellat, facilis
+                <strong>distinctio necessitatibus aperiam quia,</strong> quam minus obcaecati tenetur mollitia laborum
+                quo ex suscipit laboriosam blanditiis. Minus, nobis velit!</p>
+        </div>
+        <div style="background: maroon; width:500px; margin:10px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium repellat, facilis distinctio
+                necessitatibus aperiam quia, quam minus obcaecati tenetur mollitia laborum quo ex suscipit laboriosam
+                blanditiis. Minus, nobis velit!</p>
+            <p>Lorem ipsum dolor sit <i>amet consectetur <b>adipisicing elit.</b> At praesentium repellat, </i>facilis
+                distinctio necessitatibus aperiam quia, quam minus obcaecati tenetur mollitia laborum quo ex suscipit
+                laboriosam blanditiis. Minus, nobis velit!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium repellat, facilis distinctio
+                necessitatibus aperiam quia, quam minus obcaecati tenetur mollitia laborum quo ex suscipit laboriosam
+                blanditiis. Minus, nobis velit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium repellat, <i>facilis distinctio
+                    necessitatibus aperiam quia</i>, quam minus obcaecati tenetur mollitia laborum quo ex suscipit
+                laboriosam blanditiis. Minus, nobis velit!</p>
+        </div>
+        <table border='1'>
+            <!-- należy utworzyć class-e dla tabeli i w css sformatwać szerokość na 100%, chyba, że nie chcemy... -->
+            <caption>NAGŁÓWEK ALBO RACZEJ TYTUŁ TABELI</caption>
+            <!-- wiersze => td*5 -->
+            <tr>
+                <td colspan="3">01</td>
+                <!-- <td>02</td>
+            <td>03</td> -->
+                <td>04</td>
+                <td>05</td>
+            </tr>
+            <!-- nagłówki tabeli table header, ilośc th równa ilości kolumn!-->
+            <thead>
+
+                <tr>
+                    <th>naglowek 1</th>
+                    <th>naglowek 2</th>
+                    <th>naglowek 3</th>
+                    <th>naglowek 4</th>
+                    <th>naglowek 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- table row -->
+                <tr>
+                    <!-- table data -->
+                    <td>body1</td>
+                    <td>body2</td>
+                    <td>body3</td>
+                    <td>body4</td>
+                    <td>body5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>stopka1</td>
+                    <td>stopka2</td>
+                    <td>stopka3</td>
+                    <td>stopka4</td>
+                    <td>stopka5</td>
+                </tr>
+            </tfoot>
+            <tr>
+                <td rowspan="4">11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <!-- <td>31</td> ROWSPAN-->
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+            </tr>
+            <!-- td{komórka}*5 -->
+            <tr>
+                <!-- <td>komka17</td> ROWSPAN-->
+                <td>komka27</td>
+                <td>komka37</td>
+                <td>komka47</td>
+                <td>komka57</td>
+            </tr>
+            <tr>
+                <!-- td{komórka $}*5 -->
+                <!-- <td>komka31</td> ROWSPAN-->
+                <td>komka32</td>
+                <td>komka33</td>
+                <td>komka34</td>
+                <td>komka35</td>
+            </tr>
+        </table>
+        <!-- odnośnik mailowy -->
+        Napisz do mnie: <a href="r.brzegowy@gmail.com">r.brzegowy@gmail.com</a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gsl69na5ltc" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </main>
+
+</body>
+
+</html>

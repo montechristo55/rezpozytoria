@@ -1,0 +1,95 @@
+body{
+background: teal;
+/* margin:0 auto; */
+display:flex;
+justify-content: center;
+background-image: url('grafika/mountains-660x330.jpg');
+background-position: center;
+background-repeat: no-repeat;
+}
+main{
+background-color: rgba(255,255,255,0.2);
+width: 1000px;
+height: 600px;
+/* ten rodzic, który ma zmieniony position, tu na "position:relative" to wzgledem niego będą się ustawiały div-y z wlaściwością position:absolute; */
+position: relative;
+/* jeśli usunę ten wpis powyżej to wg body!!! */
+}
+main div {
+width: 150px;
+height: 150px;
+/* position: relative; */
+}
+#a1{
+background-color: lightblue;
+position: absolute;
+left:0;
+top:0;
+}
+#a2{
+background-color: white;
+position: absolute;
+right:0;
+top:0;
+z-index: 777;
+
+}
+#a3{
+background-color: thistle;
+position: absolute;
+right:0;
+bottom:0;
+}
+#a4{
+background-color: salmon;
+position: absolute;
+left:0;
+bottom:0;
+}
+#a5{
+background-color: lightgreen;
+position: absolute;
+left:50px;
+top:50px;
+}
+#a6 {
+background-color: grey;
+position: absolute;
+left:100px;
+top:100px;
+}
+#a7 {
+background-color: rgb(241, 67, 67);
+position: absolute;
+left:150px;
+top:150px;
+}
+#a8 {
+background-color: lightgreen;
+position: absolute;
+right:50px;
+top:50px;
+z-index:555;
+}
+#a9 {
+background-color: orange;
+position: absolute;
+right:100px;
+top:100px;
+z-index:333;
+}
+#a10 {
+background-color: maroon;
+right:150px;
+top:150px;
+z-index:222;
+position: absolute;
+}
+#a11 {
+background-color: navy;
+right:200px;
+top:200px;
+z-index:111;
+position: absolute;
+}
+

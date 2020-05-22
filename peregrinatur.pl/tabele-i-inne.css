@@ -1,0 +1,32 @@
+body{
+    background: teal;
+    /* margin:0 auto; */
+    display:flex;
+    justify-content: center;
+}
+main{
+    background: #fff;
+    width: 1000px;
+    /* height: 800px; */
+}
+
+main div a1 a2 a3 a4 a5 {
+    width: 150px;
+    height: 150px;
+}
+
+#a1{
+    background-color: lightblue;
+}
+#a2{
+    background-color: white;
+}
+#a3{
+background-color: thistle;
+}
+#a4{
+    background-color: salmon;
+}
+#a5{
+    background-color: lightgreen;
+}
