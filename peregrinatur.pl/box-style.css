@@ -92,4 +92,14 @@ top:200px;
 z-index:111;
 position: absolute;
 }
-
+.f20{
+    background: maroon;
+}
+.klasy2{
+    font-size: 24px;
+}
+.different div {
+    font-weight: bold;
+    font-style: italic;
+    border: 2px solid black;
+}
