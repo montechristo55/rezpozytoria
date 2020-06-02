@@ -33,6 +33,7 @@ body {
     list-style-type: none;
     color: #006564;
     border-radius: 5px;
+    /* width: 900px; */
     }
 .header__nav--menu {
     display:flex;
@@ -43,19 +44,29 @@ body {
     font-size: 22px;
     min-height: 40px;
     line-height: 200%;
+    
 }
 .header__nav--menu a {
     text-decoration: none;
     color: #006564;
     margin:10px;
+    padding: 5px 10px;
+    
 }
 .header__nav--menu a:hover {
-    color:rgb(40, 48, 72);
+    color:#fff;
+    background-color: #006564;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:10px;
+
+    /* color:rgb(40, 48, 72); */
     /* #92140c */
 }
 .header__nav--menu li {
     list-style-type: none;
     padding: 0 10px;
+    /* margin: 0 5px; */
     border-right: 1px dashed #006564;
     
 }
@@ -71,7 +82,7 @@ body {
 .main {
     max-width: 550px;
     margin:none;
-    background-color:lightblue;
+    /* background-color:lightblue; */
     position: relative;
 }
 .content__square {
@@ -84,9 +95,10 @@ body {
     background-image: url('grafika/klasztor-jasnogorski.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width:100%;
     height: 300px;
-    margin-top:20px;;
+    margin-top:20px;
     color: #fff;
     display:flex;
     align-items: flex-end;
