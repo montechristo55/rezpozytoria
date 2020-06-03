@@ -27,6 +27,20 @@ body {
     text-shadow: 2px 2px;
     font-weight: 300;
 }
+/* .hamburger-menu{
+    width: 50px;
+    height: 55px;
+    border:0;
+    border-top: 5px solid #ffffff;
+    background:#006564;
+    position: relative;
+}
+.hamburger::before, .hamburger::after{
+    content:'';
+    position: absolute;
+    left:50px;
+    border-top: 5px solid #ffffff;
+} */
 .header__nav{
     display:flex;
     justify-content: center;
@@ -70,9 +84,9 @@ body {
     border-right: 1px dashed #006564;
     
 }
-.header__nav--menu li:first-child {
+/* .header__nav--menu li:first-child {
     border-left: 1px dashed #006564;
-}
+} */
 .layout{
     
     min-height: 10px;
