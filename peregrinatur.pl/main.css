@@ -3,7 +3,8 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     font-family: sans-serif;
-    color:white;
+    box-sizing: border-box;
+    /* color:white; */
 }
 .top__box{
     display:flex;
@@ -84,68 +85,73 @@ body {
     border-right: 1px dashed #006564;
     
 }
-/* .header__nav--menu li:first-child {
+.header__nav--menu li:first-child {
     border-left: 1px dashed #006564;
-} */
+}
 .layout{
-    
     min-height: 10px;
     background-color: #006564;
-    
 }
 .main {
     max-width: 550px;
     margin:none;
-    /* background-color:lightblue; */
     position: relative;
+    display:flex;
 }
 .content__square {
     list-style: none;
-    /* display:flex; */
-    /* flex-direction:column; */
-    position:reletive;
+    position:relative;
+}
+
+.content__square a {
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__square a:hover {
+    text-decoration: none;
+    opacity: 0.8;
 }
 .content__square--pilgrim {
     background-image: url('grafika/klasztor-jasnogorski.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width:100%;
-    height: 300px;
     margin-top:20px;
-    color: #fff;
     display:flex;
     align-items: flex-end;
     border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 550px;
+    height: 300px;
+    opacity:1; 
 }
-.fotolink{
-    text-decoration: none;
-    color: #fff;
+
+.content__square--pilgrim:hover {
+    transform: scale(0.95);
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#006564;
 }
+
 .content__square--turist {
     background-image: url('grafika/mountains-660x330.jpg');
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
     margin:20px 0;
-    color: #fff;
     display:flex;
     align-items: flex-end;
     border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
 }
-.content__square--enjoy{
-    background-image: url('#');
-    background-repeat: no-repeat;
-    width:100%;
-    height: 300px;
-    /* margin:none; */
-    margin-bottom: 25px;
-    color: #fff;
-    flex-wrap: wrap;
-    display:flex;
-    align-items: flex-end;
-    position: absolute;
-    left:0;
+.content__square--turist:hover {
+    transform: scale(0.95);
+    
 }
 .content__square--transfer{
     background-image: url('grafika/krakow-airport.jpg');
@@ -157,27 +163,32 @@ body {
     display:flex;
     align-items: flex-end;
     border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.content__square--transfer:hover {
+    transform: scale(0.95);
+    justify-content: center;
+    align-items: center;
 }
 .content__square--plan{
-    background-image: url('grafika/the\ world.jpg');
+    background-image: url('grafika/the world.jpg');
     height: 300px;
     margin-bottom: 25px;
+    border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center center;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: #006564;
-    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
 }
-.content__square--tile {
-    background-image: url('#');
-    min-width: 350px;
-    min-height: 300px;
-    margin-bottom: 25px;
-    background-color: grey;  
+.content__square--plan:hover{
+    transform: scale(0.95);
 }
+
 .footer{
     background-color:red;
     min-height: 300px;
+    width: 1000px;
+    color: #006564;
+    display:flex;
+    justify-content:center;
 }
+
