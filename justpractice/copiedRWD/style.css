@@ -64,7 +64,6 @@ section{
     border-bottom: none;
 }
 nav{
-    
     grid-area: nav;
 }
 nav a {
@@ -106,10 +105,19 @@ footer{
     "news logo "
     "news nav"
     "address address"
-    
     ;
     }
 }
 
-
+@media (min-width:800px) {
+    main{
+    width: 800px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+    "date date date"
+    "news logo logo"
+    "news nav address"
+    
+    }   
+}
 
