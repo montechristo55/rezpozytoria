@@ -1,21 +1,19 @@
-.page{
-    background-image: url('../img/talin\ fhd.jpg');
+.page {
+    background-image: url('../img/talin-fhd.jpg');
     background-position: center center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     min-height: 100vw;
     box-sizing: border-box;
-    margin:0 auto;
-    
+    margin:0 auto; 
 }
 
 .content{
-    background-color: rgba(255, 255, 255, 1);
-    color: black
+    color: green;
 }
 
 .blank{
-    min-height: 600px;
+   min-height: 500px;
 }
 .first-blank{
-    height: 5px;
+    height: 55px;
 }
