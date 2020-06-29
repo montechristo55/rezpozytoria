@@ -3,10 +3,12 @@ body {
     justify-content: center;
     /**WYŚRODKOWANIE STRONY** --> a/a albo margin:0 auto;  */  
     font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f5;
+    padding-bottom: 64px;
     
 }
 #background{
-    background-image: url(assets/masthead@2x.jpg);
+    background-image: url(../assets/masthead@2x.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -43,8 +45,9 @@ border-radius: 2px;
 font-family:'Roboto Condensed', sans-serif;
 }
 nav a:hover{
-    background:#646d72;
+    background-color:#ffc000;
     color: #fff;
+
 }
 /* .active{ */
 nav a.active{ 
@@ -53,6 +56,7 @@ nav a.active{
 }
 nav a.active:hover{
     background-color:#646d72;
+    color:#656a6f;
 }
 #logo {
     width: 131px;
@@ -62,6 +66,7 @@ nav a.active:hover{
     margin-top: 200px;
     font-size: 18px;
     width: 740px;
+    margin-bottom: 190px;
 }
 h1{
     font-size: 96px;
@@ -85,4 +90,66 @@ h2{
 }
 #head a:hover{
     color:#ffc000;
+}
+.info{
+    display: flex;   
+    justify-content: space-between;
+    color:#656a6f; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin:0px;
+    padding-bottom: 64px;
+    font-family:'Roboto', sans-serif ;
+}
+.info div{
+    width: 30%;
+    margin-right: 5%;
+}
+
+.info h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 15px 0 18px;
+    /* margin-top:15px; */
+    /* margin-bottom: 18px; */
+    color:#2d3438;
+
+}
+.info h3::after {
+    background-color:#ffc000;
+    content:"";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 4px;
+}
+.info p {
+    margin-top:16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.info a{
+    color:rgb(60, 74, 82);
+    font-family: 'Robotobold';
+    text-decoration: none;
+    padding:5px 0 8px 22px;
+    font-weight: bold;
+}
+.info a::before{
+    content: "... ";
+    background-color:#ffc000;
+    content:"";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    
 }
