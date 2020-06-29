@@ -1,0 +1,15 @@
+body {
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* color:white; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #006564;
+   
+}
+main h1 {
+    text-shadow: 1px 1px;
+    font-weight: 300;
+}
+
