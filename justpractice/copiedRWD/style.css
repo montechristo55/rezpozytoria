@@ -41,8 +41,7 @@ aside {
 section{
     background: #fff;
     padding: 0 20px;
-    grid-area: news;
-    
+    grid-area: news; 
 }
 .news{
     border-bottom: 4px solid #ccc;   
@@ -51,12 +50,10 @@ section{
     font-size: 22px;
     margin-bottom:0;
 }
-
 .news p {
     font-size: 16px;
     margin:8px 0 12px;
 }
-
 .news .date {
     font-weight: 700;
 }
@@ -86,7 +83,6 @@ nav a {
 #faq{
     background-color: #caa077;
 }
-
 footer{
     background-color: #272327;
     color:#fff;

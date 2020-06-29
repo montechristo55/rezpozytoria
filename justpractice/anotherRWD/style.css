@@ -1,0 +1,120 @@
+body{
+    /* margin:0 auto; */
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+}
+main{
+    display:grid;
+    /* background-color: #25222b; */
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "data"
+    "several"
+    "nav"
+    "address"
+    ;
+}
+#logo{
+    background: url('../anotherRWD/logo.RWD.png');
+    width: 100%;
+    height: 163px;
+    grid-area:logo;
+    margin-bottom:0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #25222b;
+}
+aside{
+    margin:0px;
+    text-align: center;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: blanchedalmond;
+    padding: 30px 0;
+    grid-area:data;
+}
+.section {
+    padding: 0px 20px;
+    grid-area: several;
+    background-color: #fff;
+}
+.several{
+    border-bottom: 1px solid #25222b; 
+    /* padding: 12px 30px; */
+    /* background-color: #fff; */
+}
+.several h2{
+    margin-bottom:0px;
+    font-size: 22px;
+}
+.several p {
+    font-size: 16px;
+    margin:8px 0 12px;
+}
+.several .hour{
+    font-weight: 700; 
+}
+.several:last-child{
+    border-bottom: none;
+}
+nav{
+    grid-area:nav;
+    margin-top: 0px;
+}
+nav a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding:30px 0;
+    font-weight: bold;
+}
+#Accesibility{
+    background-color: rgb(241, 228, 214);
+}
+#Conduct{
+    background-color: rgb(232, 171, 59);
+}
+#Contact{
+    background-color: rgb(105, 71, 3);
+}
+#Faq{
+    background-color: #caa077;
+}
+footer{
+    grid-area: address ;
+    color: #fff;
+    background-color: #25222b;
+    padding: 30px 20px 10px 20px;
+}
+
+@media (min-width: 500px) {
+    main{
+        width: 500px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 170px auto;
+        grid-template-areas: 
+        "data data"
+        "several logo"
+        "several nav"
+        "address address"
+        ;
+    }
+}
+@media (min-width:800px) {
+    main{
+    width: 800px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+    "data data data"
+    "several logo logo"
+    "several nav address"
+    
+    }   
+}
