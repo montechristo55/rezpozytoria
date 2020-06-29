@@ -1,0 +1,243 @@
+html {
+    margin: 0px;
+    padding: 11px;
+}
+
+body {
+    background-color: #333;
+    font-family: Verdana;
+    font-size:20px;
+    color:#333;
+}
+
+header{
+    text-align: center;
+    justify-content: center;
+    background-color:lightcoral;
+    padding:  60px 0 45px;
+/* domyślnie 4 wartość jako 0 zero */
+
+}
+
+nav {
+    margin-top: 10px;
+}
+
+ nav a { 
+     font-weight: bold;
+     padding: 6px 24px ;
+     margin:  6px;
+     border-radius: 2px;
+     /* border-radius to spiłowanie kantów ramki */
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: 700;
+ }
+/* nav a hover to podswietlenie tła po najechaniu */
+nav a:hover{
+    background: #646d72;
+    color:#fff;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    min-height:  500px;
+    background-color: lightgoldenrodyellow;
+}
+aside{
+    background-color: lightseagreen;
+    width: 150px;
+    height:380px;
+}
+
+/* <div id="container" --id-- w html-u oznacza unikatowość/niepowtarzalność diva czy innego elementu> */
+/* w pliku .css zaznaczamy go jako #container */
+/*a więc # oznacza id jak np FOOTER albo HEADER*/
+
+/* <div class=container oznaczamy w css jako .conteiner i wtedy oznaczałoby klasę container i byłoby formatem wszystkich divów o tej nazwie; */
+/* tak samo jak klasa okrętów, motocykli wyscigowych, itp; okręt klasy delta, klasy dla miniatur video */
+
+/* Chierarchia kaskadowości:
+styl wpisany w linijce
+styl w dokumencie <style>
+styl w pliku css
+wartość domyślna */
+
+/* title="" będzie to text pojawiający sie po najechaniu kursorem na link */
+
+/* padding:  60px 0 45px; */
+/* domyślnie 4-ta liczba jako 0 zero */
+
+/* padding: 20px 30px 10px 50px; */
+    /* kolejność: góra prawo dół lewo */
+
+/* border-radius: 2px; */
+     /* border-radius to spiłowanie kantów ramki */
+
+/* nav a hover to podswietlenie tła po najechaniu */
+/* nav a:hover{
+    background: #646d72;
+    color:#fff;  
+} */
+
+/* margin: 30px 10px 50px 50px; */
+/* kolejność: jak w paddingach */
+
+/* selector {                                       -czyli wybrany element na stronie-  */
+
+    property: value;                             property czyli poszczególne właściwości 
+    property: value;                             value czyli wartość edytowanej właściwości
+ } 
+
+/* PRZYKŁADOWO */
+
+h1
+{
+    color: brown;
+    font-size: 36 px;
+    font-weight: none;
+}
+
+nav{
+    color:seashell;
+    font-size: 44px;
+    font-style: none;
+    
+}
+
+
+/* Stylizacja czcionki
+
+<font color="darkblue"> Stylizacja czcionki!</font> */
+
+
+/* Stylizacja hiperłącza */
+/* 1 link nieodwiedzony */
+
+a:link{
+    color: seashell;
+}
+
+/* 2 link odwiedzony */
+
+a:visited{
+    color:seashell;
+}
+
+/* 3 link po najechaniu */
+
+a:hover {
+    color:orange;
+}
+
+/* selektor znacznika - każdy div */
+div {background: lightblue;
+}
+/* elementy w elementach - każdy li wew każdego ul */
+ul li { margin: 10px;
+}
+
+section li{
+    padding: 10px;
+
+}
+
+
+/* FORMATOWANIE ZA POMOCĄ CLASS!!! */
+/* .f20 {font-size: 24px;}
+
+#naglowek{font-size: 20 px;}
+
+.p40{ padding: 40px;}
+
+
+
+/* b bezpośrednio w section */
+ section > b {
+     color: yellow
+ }
+
+/* wspólne formatowanie dla section i article */
+section, article {
+    padding; 10 px;
+}
+
+
+/* można również tak: section {
+    width:100 px;
+} 
+article { height: 100 px;
+}*/
+a:hover{background: lightskyblue}
+
+li:nth-child {
+    background: lightcoral
+}
+
+li:nth-child(even){background: lightseagreen}
+/* formatowanie z użyciem id elementu */
+ #naglowek {
+     font-size: 20 px;
+ } */
+
+ a. anim{
+    transition: all 0.15s linear;
+    font-size: 30pxpx;
+    text-decoration: none;
+    color:#333;
+}
+
+a.anim:hover{
+    background:#333;
+    color: #000;
+}
+
+a.anim:hover{
+    transition: all 0.15s linear;
+    background:#0a2b42;
+    color: white;
+}
+
+/* ANIMACJA!!! *//* ANIMACJA!!! *//* ANIMACJA!!! */
+a. anim{
+    transition: all 1s linear;
+    font-size: 30pxpx;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+/* ANIMACJA!!! */
+.box {
+    width: 150px;
+    height: 10px;
+    border:10px solid #0a2b42;
+    background:#fefefe;
+    margin:10px;
+    position: relative;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    left:0;
+}
+
+.box.b1:hover {
+    background: red;
+    
+
+}
+.box.b2:hover {
+left: 150px;
+background: red;
+}
+
+.box.b3 div {
+background: red;
+position:absolute;
+width: 0;
+height: 100%;
+transition: all 1s ease-in-out;
+}
+.box.b3:hover div{
+    width: 100%;
+}
+

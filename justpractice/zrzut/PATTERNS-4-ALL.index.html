@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<!-- lang - język strony dla urządzeń innych niż komputer, np. czytnik dla niedowidzących itp.
+ -->
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- char=>charakter (znak), set= zestaw, charset - zestaw znaków używanych na stronie www /sposób kodowania/ -->
+
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1" />
+    <!-- polecenie dla kompatybilności z internetexplore!!! -->
+
+    <!-- [if lt IE 9] -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <!-- [endif] -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--powyżej info dla urządzeń mobilnych  -->
+
+    <title>PATTERNS-4-ALL!!!</title>
+    <!-- tytuły naszej strony as above odnajdujemy w wyszukiwarce przy pozycjonowaniu strony na google -->
+
+    <meta name="description" content="to jest opis mojej strony internetowej, jej całej zawartości">
+    <!-- opis pojawiajacy sie w google -->
+
+    <meta name="keywords" content="slowa klucze dla podniesienia pozycjonowania strony" />
+
+    <link rel="stylesheet" href="PATTERNS-4-ALL.css" type="text/css" />
+    <!-- link do pliku w css==> style.css type= plik tekstowy z rozszerzeniem css-->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <!-- *wstawiamy link do strony google fonts albo fontello albo innej i pobieramy style czcionki oraz grubość; -->
+    <!-- PAMIETAJ O LATIN-EXTENSION!!! -->
+
+    <script src="skrypt.js"></script>
+    <!-- JavaScript to przednami...-->
+
+    <meta name="author" content="Krzysztof Przybylski" />
+
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            TO JEST NAGŁÓWEK!!!
+            <!-- w nagłówku mamy zwykle nawigacje -->
+            <h1>naglowek 1</h1>
+            <h2>naglowek 2</h2>
+            <h3>naglowek 3</h3>
+            <h4>naglowek 4</h4>
+            <h5>naglowek 5</h5>
+            <h6>naglowek 6</h6>
+            <nav>
+                <!-- animacja!!! -->
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" title="GO TO GOOGLE!" class="anim">GOOGGLE.COM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" title="GO TO GOOGLE!" class="anim">GOOGGLE.COM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" title="GO TO GOOGLE!" class="anim">GOOGGLE.COM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" title="GO TO GOOGLE!" class="anim">GOOGGLE.COM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" title="GO TO GOOGLE!" class="anim">GOOGGLE.COM</a>
+                    </li>
+
+                </ul>
+
+                <!-- odnosnik do strony internetowej, np. google`a; target blank ażeby się otwierała w nowym oknie!!! title to tekst jaki ma sie pojawić po najechaniu kursorem na link--><br>
+
+            </nav>
+
+        </header>
+
+
+
+        <section>
+
+            <aside>
+                Panel lewy
+            </aside>
+
+            <!-- <p> to jest akapit w tekście!</p> -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum, minima eligendi maiores, est r omnis quidem. Porro, assumenda! Suscipit, nobis officia? <br> 2
+                < 5 <br>
+                    <!-- każdy znak ma swoją encje, opis literowo-znakowy, np dla < to &lt;, a dla > to &gt; a dla & to &amp; i nazywa się encja ampersand-->
+                    2&lt;5
+                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic laboriosam enim blanditiis beatae, earum quas obcaecati.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolorum, eligendi nihil iure laborum recusandae dolores nobis excepturi. <span><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Sint debitis, quasi totam natus reiciendis sequi architecto velit quis corporis magni
+                        perferendis ullam unde praesentium quo quaerat! Sint aperiam obcaecati
+                        inventore.</b></span>Corrupti hic aliquid blanditiis deleniti asperiores quia, reprehenderit possimus culpa ratione nesciunt.
+                <!-- nagłówki od najwiekszego, h1 do najmniejszego h6 -->
+                <!-- Znacznik <span> służy do zgrupowania elementów typu inline (np. słów w tekście albo obrazków), zazwyczaj w celu przypisania im określonego stylu.-->
+            </p>
+            <!-- chcesz skopiować linijke: zaznacz text, SHIFT+ALT i strzałka góra/dół -->
+
+            <!-- <p> to jest akapit w tekście!</p> -->
+            <!-- <br> to nowa linijka -->
+            <p>
+                <!-- &nbsp; to jest znak twardej spacji...tzw encja -->
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.&nbsp; <br> Quo impedit non reprehenderit eius dolor? commodi cupiditate quidem dignissimos. Recusandae ratione voluptatem quae. At molestias ex nulla est explicabo. Lorem &nbsp;
+                ipsum <br>dolor sit amet consectetur, adipisicing elit. Soluta, eveniet earum accusamus molestiassedfugit.
+                <!-- <br> przejdz do nowej linii -->
+                <b>Lorem ipsum dolor</b> sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur doloribus dolorum molestiae qui quaerat voluptatem ex facilis provident voluptatibus repellendus?
+                <br>
+                <i>Soluta, eveniet</i> earum <u>accusamus</u>U cumque fugiat <strong>repellat totam natus commodi ex est
+                    debitis</strong> modi vel molestiae quasi mollitia deleniti molestias sed fugit.
+            </p>
+
+            <!-- <i>pochylenie czcionki</i> -->
+            <!-- <br> oznacza nową linijkę ->break line -->
+            <!-- <b> pogrubienie czcionki</b> -->
+            <!-- <u>podkreślenie</u> -->
+            <!-- <strong> pogrubienie czcionki, jak bold -->
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, eveniet earum accusamus cumque fugiat repellat totam natus commodi ex est debitis modi vel molestiae quasi mollitia deleniti molestias sed fugit.
+            </p>
+            <!-- <ul>lista wypunktowana </ul> -->
+            <ul>
+                <li>wiosna</li>
+                <li>lato</li>
+                <li>jesien</li>
+                <li>zima</li>
+
+                <!-- <li>list item</li> ->
+
+        -> CTRL+X to CUT !!!-->
+
+                <!-- ALT i strzałka zmieniaja kolejnośc wiersza w tabeli!!! -->
+            </ul>
+            <!-- <ol>lista numerowana</ol> -->
+            <ol>
+                <li>wiosna</li>
+                <ul>
+                    <li>
+                        podroździał, podpunkt podpunktu....
+                    </li>
+                </ul>
+                <li>lato</li>
+                <li>jesień</li>
+                <li>zima</li><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, laudantium recusandae quod blanditiis exercitationem minus accusamus aliquam unde, voluptatibus molestiae facilis doloribus! Quis assumenda beatae molestias
+                quod iusto. Voluptatum, dolor!
+            </ol>
+
+        </section>
+
+        <section>
+
+            <!-- tabele -->
+            <table border="1" width="1000px" ; align="center">
+                <!-- table border to obramowanie -->
+                <tr>
+                    <td colspan="3" align="center" bgcolor="red">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <!-- td colspan - łaczenie komórek tabeli w poziomie -->
+                <tr>
+                    <td>1ooo</td>
+                    <td>2ooo</td>
+                    <!-- <td>3ooo</td>    -->
+                    <td>4ooo</td>
+                    <td>5ooo</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">1</td>
+                    <!-- td rowspan to łaczenie komórek pionowo -->
+                    <td>2rrrr</td>
+                    <td>3rrrr</td>
+                    <td>4rrrr</td>
+                    <td>5rrrr</td>
+                </tr>
+                <tr>
+                    <td>1ww</td>
+                    <td>2ww</td>
+                    <td>3ww</td>
+                    <td>4ww</td>
+                    <td>5ww</td>
+                </tr>
+                <tr>
+                    <td>1ole</td>
+                    <td>2ole</td>
+                    <td>3ole</td>
+                    <td>4ole</td>
+                    <td>5ole</td>
+                </tr>
+
+            </table>
+            <!-- <table>znacznik tworzenia tabeli</table>, tabele tworzymy wierszami, nie kolumnami; -->
+            <table>
+                <tr>
+                    <!-- <tr>to znacznik kazdego kolejnego wiersza tabeli</tr>  POCZĄTEK I KONIEC WIERSZA TABELI-->
+                    <td>komorka 1</td>
+                    <td>komorka 2</td>
+                    <td>komorka 3</td>
+                    <td>komorka 4</td>
+                    <td>komorka 5</td>
+                    <!-- <td> odpowiada za każdą komórkę</td> KAŻDA KOLEJNA KOMÓRKA WIERSZA TABELI-->
+                </tr>
+                <tr>
+                    <td>komorka 31</td>
+                    <td>komorka 32</td>
+                    <td>komorka 33</td>
+                    <td>komorka 34</td>
+                    <td>komorka 35</td>
+                </tr>
+
+                <!-- CTRL+X czyli CUT --KASOWANIE WIERSZA/LINIJKI BEZ ZAZNACZANIA!!! -->
+            </table>
+            <!-- <table> td{$$}*5 </table> I OTRZYMUJEMY TABELKE JAK PONIŻEJ!!! albo td*5-->
+            <table>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </table>
+            <!-- td{$}*5 I MAMY Z AUTOMATY ŚLICZNĄ TABELECZKĘ!!! -->
+            <table>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                ODNOŚNIKI!!<br>
+                <!-- adres bezwzględny!!! -->
+                <a href="https://www.google.com/" target="blank;"> Przejdz do google`a <a>
+            </h2>
+            <!-- target="blank" azeby strona otwierała sie w nowym oknie -->
+
+            <br><br>
+
+            <!-- adres względny -->
+            <a href="szklarnia.html">Perzejdź do szklarnii</a>
+
+                <br><br>
+
+                <a href="https://www.youtube.com/">Go to youtube!</a>
+
+                <br><br> ODNOŚNIK DO MAILA:
+
+                <br><br> Napisz do mnie: <a href="mailto:r.brzegowy@gmail.com">r.brzegowy@gmail.com</a>
+
+                <br><br>
+
+                <!-- target="blank" otwiera adres w nowym oknie!! -->
+                <a href="https://www.google.com/" target="blank"> Przejdz do google`a <a>
+
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Jakiś odnosnik</a>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        &copy; STOPKA
+
+    </footer>
+
+
+</body>
+
+</html>
+
+<!-- struktura nav-a
+<header>
+    <h1> class="logo">Mój mega blog</h1>
+    <nav id="topnav">
+         <ul class="menu">
+             <li><a href="#">strona główna</a>></a></li>
+             <li><a href="#">kontakt</a>></a></li>
+             <li><a href="#">tematy</a>></a></li>
+             <li><a href="#">jajco</a>></a></li>
+             <li><a href="#">galeria</a>></a></li>
+            </nav>
+        </ul>>
+</header> -->
