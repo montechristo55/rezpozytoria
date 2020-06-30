@@ -15,14 +15,11 @@
     <meta name="description" content="to jest opis mojej strony internetowej, jej całej zawartości">
     <meta name="keywords" content="slowa klucze dla podniesienia pozycjonowania strony" />
 
-    <link rel="stylesheet" href="../peregrinatur.pl/css/findTrip.style.css" type="text/css" />
+    <link rel="stylesheet" href="../peregrinatur.pl/css/findTrip.style.css" type="text/css"/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-
-
-    <script src="skrypt.js"></script>
 
     <meta name="author" content="Krzysztof Przybylski" />
 
@@ -31,7 +28,7 @@
 <body>
     <main>
         <h1>Find your trip!</h1>
-        <form action="">
+        <form class="form">
             <p>
                 <label>Your name:
                     <input id="firstName" name="firstName" type="text" placeholder="Please enter your name">
@@ -39,41 +36,104 @@
             </p>
             <p>
                 <label>Your phone number:
-                    <input id="phonenumber" name="phonenumber" type="tel">
+                    <input 
+                    id="phonenumber"
+                    class="form__input" 
+                    name="phonenumber" 
+                    placeholder="Please enter your phone number" 
+                    type="tel">
+                </label>
+            </p>
+            <p>
+                <label>Your email:
+                    <input 
+                    id="email"
+                    class="form__input" 
+                    name="email" 
+                    placeholder="Please enter your email address" 
+                    type="email">
+                </label>
+            </p>
+            <!-- KOD POCZTOWY!!! -->
+            <p>
+                <label>
+                    Postal code
+                    <input name="postalCode" pattern="[0-9]{2}-[0-9]{3}"  >
+                </label>
+            </p>
+
+            <p>
+                <label>Your password:
+                    <input 
+                    id="password"
+                    class="form__input" 
+                    name="password" 
+                    placeholder="Please enter your password" 
+                    type="password">
                 </label>
             </p>
             <p>
                 <label>Travel from:
-                    <input id="startingPoint" name="startingPoint" type="text" placeholder="Kraków">
+                    <input class="form__input"id="startingPoint" name="startingPoint" type="text" placeholder="Kraków">
                 </label>
             </p>
             <p>
                 <label>Going to:
-                    <input id="finishLane" name="finishLane" type="text">
+                    <input class="form__input"id="finishLane" name="finishLane" type="text">
                 </label>
             </p>
             <p>
-                <label>Find your trip:
-                    <!-- pola wyboru!!! -->
-                    <input id="finishLane" name="finishLane">
-                </label>
+                <label for="planTrip" >Find your planned trip:</label>
+                <select>
+                    <option value="setOne">Spływ Dunajcem - Jezioro Czorsztyńskie - Zakopane</option>
+                    <option value="setTwo">Katowice - Beskidy - Żywiec</option>
+                    <option value="setThree">Jasna Góra - Kalwaria Zabrzydowska - Wadowice</option>
+                    <option value="setFour">Bochnia - Sandomierz - Tarnów</option>
+                    <option value="setFive">Kraków - Wieliczka - Piwniczna-Zdrój</option>
+                </select>
+
             </p>
+
+
+
             <fieldset>
                 <legend>Wycieczka</legend>
+                <p>
+                    <label for=""><input name="destination" type="radio" value="Cześtochowa">Jasna Góra</label>
+                </p>
+                <p>
+                    <label for=""><input name="destination" type="radio" value="Zakopane">Zakopane</label>
+                </p>
+                <p>
+                    <label for=""><input name="destination" type="radio" value="Piwniczna">Piwniczna</label>
+                </p>
+                <p>
+                    <label for=""><input name="destination" type="radio" value="Śląsk">Śląsk</label>
+                </p>
+                <p>
+                    <label for=""><input name="destination" type="radio" value="CracowAirport">CracowAirport</label>
+                </p>
+
+                <p>
+                    <label for="comments">Chcesz - zapytaj:</label>
+                    <textarea id="comments" name="comments">Witaj, masz pytanie? Chętnie podpowiemy, doradzimy:-)</textarea>
+                </p>
+                <p>
+                    <input name="comments" type="submit" value="Wyślij" />
+                    
+                </p>
+
             </fieldset>
 
-            <p clas="tick">
+            <p class="tick">
                 <label for="regulamin"><inpute name="regulamin" type="checkbox" value="agree">Regulamin</label>
                 <!-- <label for="RODO"><inpute name="RODO" type="checkbox">Informacje o przechowywaniu danych osobowych</label> -->
             </p>
-
-
-
 
 
         </form>
 
     </main>
 </body>
-
+<script src="skrypt.js"></script>
 </html>
