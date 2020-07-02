@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <!-- char=>charakter (znak), set= zestaw, charset - zestaw znaków używanych na stronie www /sposób kodowania/ -->
@@ -27,23 +28,26 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> -->
     <!-- *wstawiamy link do strony google fonts albo fontello albo innej i pobieramy style czcionki oraz grubość; -->
     <!-- PAMIETAJ O LATIN-EXTENSION!!! -->
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <script src="skrypt.js"></script>
     <!-- Java to przednami.... -->
 
     <meta name="author" content="Krzysztof Przybylski" />
 </head>
+
 <body>
     <div id="background">
-        
+
     </div>
     <main>
         <!-- wrzucenie wszystkiego w jednego diva pomaga wyśrodkować strone... -->
-        <header>
+        <header class="home">
             <img id="logo" src="../assets/logo@2x.png" alt="selfy logo">
             <nav>
-                <a class="active" href="index.html">Home</a>
+                <a class="active" href="selfy-index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="styles.html">Styles</a>
                 <a href="gallery.html">Gallery</a>
@@ -52,32 +56,40 @@
             </nav>
         </header>
         <section id="head">
-            <h1>You idiots!</h1>
+            <h1 id="home">You idiots!</h1>
 
-            <h2>These are not them! You’ve captured their stunt doubles!</h2>
-            
-            <p class="spaceballs">— Spaceballs</p>
-            <p>
-                No more boring V-Cards, Selfy is the perfect theme for self promotion. A little piece of the internet all about you, customise and self 
+            <h2 class="aleo home">These are not them! You’ve captured their stunt doubles!</h2>
+
+            <p id="spaceballs">— Spaceballs</p></br>
+            <p class="intro">
+                No more boring V-Cards, Selfy is the perfect theme for self promotion. A little piece of the internet
+                all about you, customise and self
                 express with Selfy... <a href="styles.html">Read More</a>
             </p>
-
         </section>
-        
+
         <section class="info">
             <div>
                 <h3>About me</h3>
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-                <p>Vivamus sagittis lacus vel augue laoreetrum faucibus dolor auctor. Aenean eu leonish quam ugue laoreet rutrum faucibus dolor.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta
+                    gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+                    porta gravida at eget metus.</p>
+                <p>Vivamus sagittis lacus vel augue laoreetrum faucibus dolor auctor. Aenean eu leonish quam ugue
+                    laoreet rutrum faucibus dolor.</p>
             </div>
             <div>
                 <h3>What I do</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla hucibus idol.</p>
-                <p>Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla
+                    hucibus idol.</p>
+                <p>Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum
+                    faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                    dolor auctor.</p>
             </div>
             <div>
                 <h3>Get in touch</h3>
-                <p>Donec id elit non mi porta gravida at eget metus non mi porta gravida . Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.</p>
+                <p>Donec id elit non mi porta gravida at eget metus non mi porta gravida . Donec ullamcorper nulla non
+                    metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.</p>
                 <p>
                     <a href="contact.html">Say Hi, Email me</a>
                 </p>
@@ -85,19 +97,21 @@
         </section>
 
         <footer>
-            <div>
+            <div class="footer-left">
                 <img src="../assets/logo-foot@2x.png" alt="selfy logo">
-                <span> © Copyright Selfy 2013</span>
+                <span class="footer-left"> © Copyright Selfy 2013</span>
                 <!-- &copy; -->
             </div>
 
-            <div>
+            <div class="footer-right">
                 <img src="../assets/icon-facebook@2x.png" alt="selfy facebook">
                 <img src="../assets/icon-linkedin@2x.png" alt="selfy linked">
                 <img src="../assets/icon-twitter@2x.png" alt="selfy twitter">
             </div>
+
         </footer>
 
-    </main> 
+    </main>
 </body>
+
 </html>
