@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RWD HOMEWORK</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
 
     <main>
         <aside class="aside">
-            <button>COMPOSE</button>
-             <nav class="nav">
-            <a href="#" alt="Inbox">Inbox</a>
-            <a href="#" alt="Important">Important</a>
-            <a href="#" alt="Sent">Sent</a>
-            <a href="#" alt="Drafts">Drafts</a>
-            <a href="#" alt="Trash">Trash</a>
-             </nav>
-    
-        <div class="labels">Labels
-            <a href="#" alt="Private">Private</a>
-            <a href="#" alt="Job">Job</a>
-            <a href="#" alt="Flights">Flights</a>
-        </div>
+
+            <nav class="nav">
+
+                <div class="guzik">
+                    <button id="button">
+                        COMPOSE
+                    </button>
+                </div>
+
+                <ul class="functions">
+                    <li><a href="#" alt="Inbox">Inbox</a></li>
+                    <li><a href="#" alt="Important">Important</a></li>
+                    <li><a href="#" alt="Sent">Sent</a></li>
+                    <li><a href="#" alt="Drafts">Drafts</a></li>
+                    <li><a href="#" alt="Trash">Trash</a></li>
+                </ul>
+
+                <div class="labels">Labels
+                    <a id="labels-one" href="#" alt="Private">Private</a>
+                    <a href="#" alt="Job">Job</a>
+                    <a href="#" alt="Flights">Flights</a>
+                </div>
+
+            </nav>
+
+
         </aside>
 
-        <section>
+        <section class="content">
             <div class="mailbox">
                 <h2>name surname</h2>
                 <p class="mail-title">mail title</p>
@@ -63,10 +77,10 @@
                 <p class="mail-title">mail title</p>
                 <p class="mail-content">Lorem ipsum dolor sit amet.</p>
             </div>
-            
+
         </section>
 
-        <section>
+        <section class="story">
             <div class="mail-story">
                 <header>
                     <h1>Lorem ipsum dolor sit.</h1>
@@ -88,4 +102,5 @@
     </main>
 
 </body>
+
 </html>
