@@ -5,7 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f3f4f5;
     padding-bottom: 64px;
-    
 }
 #background{
     background-image: url(../assets/masthead@2x.jpg);
@@ -85,10 +84,14 @@ h2{
     font-size:28px;
     color:#e2e2e2;  
 }
-
 h2.home{
     font-size:28px;
     color:#e2e2e2;
+}
+h4{
+    color: #2d3438;
+    font-size: 36px;
+    font-family:'Roboto Condensed'
 }
 .aleo{
     font-family: 'Aleo', serif;
@@ -100,6 +103,7 @@ h2.home{
     margin-top: 0px;
     margin-right:46px;
 }
+
 #spaceballs{
     font-size: 24px;
     font-weight: 700;
@@ -130,14 +134,12 @@ h2.home{
     font-weight: 400;
     line-height: 24px;
     margin:0px;
-    
     font-family:'Roboto', sans-serif ;
 }
 .info div{
     width: 30%;
     margin-right: 5%;
 }
-
 .info h3{
     font-size: 36px;
     font-weight: 700;
@@ -146,9 +148,8 @@ h2.home{
     /* margin-top:15px; */
     /* margin-bottom: 18px; */
     color:#2d3438;
-
 }
-.info h3::after, h1::after {
+.info h3::after, h1::after, h4::after {
     background-color:#ffc000;
     content:"";
     width: 8px;
@@ -158,7 +159,8 @@ h2.home{
 }
 p{
     color:#656a6f;
-    line-height: 24px;;
+    line-height: 24px;
+    font-size: 16px;
 }
 .info p {
     margin-top:16px;
@@ -193,7 +195,6 @@ footer{
     font-weight: 400;
     color: #9fa6aa;
     margin:64px 80px 0px 80px;
-    
 }
 .footer-left{
     display: flex;
@@ -232,4 +233,48 @@ img#about{
 }
 .left-conteiner{
     margin-right:68px;
+}
+
+/* podstrona gallery */
+
+#gallery-one{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text img1 img2"
+    "text img3 img4"
+    "text img5 img6";
+    
+}
+#gallery-one img {
+    width: 350px;
+    border:6px solid #fff;
+    margin: 16px 20px 16px;
+}
+/* #other-img{
+    background-size: cover;
+    height: 204px;
+} */
+#gallery-one img:nth-child(odd) {
+    margin-right: 0px;
+}
+#gallery-one .text{
+    grid-area: text;
+}
+
+h4::after {
+    background-color:#ffc000;
+    content:"";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 4px;
+}
+#gallery-one .aleo{
+    font-size: 24px;
+    line-height: 32px;
+}
+#gallery-one{
+    border-bottom-color: 1px solid #cad2d7; 
 }
