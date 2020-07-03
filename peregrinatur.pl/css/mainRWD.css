@@ -2,9 +2,18 @@ body {
     width: 1000px;
     box-sizing: border-box;
     margin: 0 auto;
-    box-sizing: border-box;
-    /* color:white; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.header{
+    grid-area: header;
+}
+.header__logo{
+    display:flex;
+    justify-content: center;
+    color: #006564;
+    font-size: 77px;
+    text-shadow: 2px 2px;
+    font-weight: 400;
 }
 .top__box{
     display:flex;
@@ -17,16 +26,8 @@ body {
 }
 .top__box--kontakt {
     color:teal;
-    display: flex;;
+    display: flex;
     flex-wrap: wrap;
-}
-.header__logo{
-    display:flex;
-    justify-content: center;
-    color: #006564;
-    font-size: 77px;
-    text-shadow: 2px 2px;
-    font-weight: 300;
 }
 /* .hamburger-menu{
     width: 50px;
@@ -53,20 +54,22 @@ body {
 .header__nav--menu {
     display:flex;
     justify-content:center;
+    align-items: center;
     margin: 5px 0;
-    padding: 5px;
     color: #006564;
     font-size: 22px;
     min-height: 40px;
     line-height: 200%;
-    
+    font-weight: 500;
 }
 .header__nav--menu a {
     text-decoration: none;
     color: #006564;
     margin:10px;
-    padding: 5px 10px;
-    
+    padding: 0px 10px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 .header__nav--menu a:hover {
     color:#fff;
@@ -74,7 +77,9 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
     margin:10px;
-
+    display:flex;
+    justify-content:center;
+    align-items: center;
     /* color:rgb(40, 48, 72); */
     /* #92140c */
 }
@@ -83,7 +88,6 @@ body {
     padding: 0 10px;
     /* margin: 0 5px; */
     border-right: 1px dashed #006564;
-    
 }
 .header__nav--menu li:first-child {
     border-left: 1px dashed #006564;
@@ -98,9 +102,20 @@ body {
     position: relative;
     display:flex;
 }
+#mainRWD{
+    display: grid;
+    grid-template-columns: 1fr 350px 350px auto 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-area: 
+    "header header header header header"
+    ". mainRWD mainRWD mainRWD."
+    "footer footer footer footer footer"
+    ;
+}
 .content__square {
     list-style: none;
     position:relative;
+    grid-area: mainRWD;
 }
 
 .content__square a {
@@ -184,6 +199,7 @@ body {
 }
 
 .footer{
+    grid-area: footer;
     min-height: 300px;
     color: #006564;
     text-align: center;
