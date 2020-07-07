@@ -45,6 +45,7 @@ color:#2d3438;
 text-decoration: none;
 border-radius: 2px;
 font-family:'Roboto Condensed', sans-serif;
+font-size: 16px;
 }
 nav a:hover{
     background-color:#646d72;
@@ -234,7 +235,6 @@ img#about{
 .left-conteiner{
     margin-right:68px;
 }
-
 /* podstrona gallery */
 
 #gallery-one{
@@ -262,7 +262,6 @@ img#about{
 #gallery-one .text{
     grid-area: text;
 }
-
 h4::after {
     background-color:#ffc000;
     content:"";
@@ -277,4 +276,67 @@ h4::after {
 }
 #gallery-one{
     border-bottom-color: 1px solid #cad2d7; 
+}
+
+hr{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+#gallery-two{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text img7 img7"
+    "text img7 img7"
+    "text img5 img6";
+}
+#gallery-two img {
+    width: 350px;
+    border:6px solid #fff;
+    margin: 16px 20px 16px;
+}
+#substitute{
+    grid-area: img7;
+}
+.text-two{
+    width: 1fr;
+}
+.fotos-two {
+    width: 2fr;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gallery-three{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text img7 img2"
+    "text img3 img4"
+    "text img5 img6";
+}
+#gallery-three img {
+    width: 350px;
+    border:6px solid #fff;
+    margin: 16px 20px 16px;
 }
