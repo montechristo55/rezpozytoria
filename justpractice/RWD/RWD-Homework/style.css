@@ -56,23 +56,53 @@ nav a{
 .functions{
     display:flex;
     flex-direction: column;
-    line-height: 48px;
-    list-style-type: none;
+    line-height: 36px;
     padding:0px;
 }
 .labels{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    line-height: 48px;
+    line-height: 36px;
 }
-#labels-one{
-    margin-top:15px;
+.labels dd{
+    margin-left:0px;
 }
-
+.inbox{
+    color:#1B98F8;
+}
+.labels-header{
+    color:#1B98F8;
+}
+#private{
+    margin-top:10px;
+}
+#private::before{
+    content: "o";
+    width: 4px;
+    height: 4px;
+    background-color:#ffc000;
+}
+#job::before{
+    content: "o";
+    width: 4px;
+    height: 4px;
+    background-color:#33b4c5;
+}
+#flights::before{
+    content: "o";
+    width: 4px;
+    height: 4px;
+    background-color:#3bc41f; 
+}
 content{
     grid-area: mailBox;
 }
-story{
+.story{
     grid-area: mailStory;
+}
+.mailbox{
+    min-height: 350px;
+    height: 100%;
+    
 }
