@@ -122,7 +122,7 @@ content{
     overflow:none;
 }
 .mailbox{
-    height: 118px;
+    height: 100%;
     width: 100%;
     margin:1px;
     color:#999;
@@ -131,7 +131,7 @@ content{
     padding:14px 16px; 
 }
 .mailbox-uno{
-    height: 118px;
+    height: 100%;
     width: 100%;
     margin:1px;
     color:#999;
@@ -140,7 +140,7 @@ content{
     padding:14px 16px; 
 }
 .mailbox-ramka{
-    height: 118px;
+    height: 100%;
     width: 100%;
     margin:1px;
     color:#999;
@@ -189,9 +189,51 @@ content{
 
 
 
-
-
-
 .story{
     grid-area: mailStory;
+}
+.mail-story{
+    width: 100%;
+}
+.footer-header{
+    display: flex;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}
+.timeAndData{
+    background-color: lightseagreen;
+    width: 75%;
+}
+.timeAndData h1{
+    font-size: 32px;
+}
+.timeAndData a {
+    text-decoration: none;
+}
+.timeAndData p{
+    font-size: 16px;
+}
+
+.footer-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16px;
+    padding: 6px 26px;
+    background-color: lightpink;
+    width: 25%;
+    
+}
+
+.footer-buttons button{
+    margin:5px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
 }
