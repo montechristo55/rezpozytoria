@@ -1,6 +1,6 @@
 html {
     margin: 0px;
-    padding: 11px;
+    padding: 4px;
 }
 
 body {
@@ -241,3 +241,6 @@ transition: all 1s ease-in-out;
     width: 100%;
 }
 
+.body{
+    color:#000;
+}
